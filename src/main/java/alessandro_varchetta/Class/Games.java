@@ -1,4 +1,4 @@
-package Class;
+package alessandro_varchetta.Class;
 
 import java.time.LocalDate;
 
@@ -6,10 +6,10 @@ public abstract class Games {
 
     private int id;
     private String titolo;
-    private LocalDate annoDiPubblicazione;
+    private int annoDiPubblicazione;
     private double price;
 
-    public Games (int id, String titolo, LocalDate annoDiPubblicazione, double price) {
+    public Games (int id, String titolo, int annoDiPubblicazione, double price) {
         this.id = id;
         this.titolo = titolo;
         this.annoDiPubblicazione = annoDiPubblicazione;
@@ -24,8 +24,12 @@ public abstract class Games {
         return titolo;
     }
 
-    public LocalDate getAnnoDiPubblicazione() {
+    public int getAnnoDiPubblicazione() {
         return annoDiPubblicazione;
+    }
+
+    public void setAnnoDiPubblicazione(int annoDiPubblicazione) {
+        this.annoDiPubblicazione = annoDiPubblicazione;
     }
 
     public double getPrice() {
@@ -40,9 +44,7 @@ public abstract class Games {
         this.titolo = titolo;
     }
 
-    public void setAnnoDiPubblicazione(LocalDate annoDiPubblicazione) {
-        this.annoDiPubblicazione = annoDiPubblicazione;
-    }
+
 
     public void setPrice(double price) {
         this.price = price;

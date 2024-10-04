@@ -1,6 +1,4 @@
-package Class;
-
-import java.time.LocalDate;
+package alessandro_varchetta.Class;
 
 public class Videogames extends Games {
 
@@ -14,6 +12,7 @@ public class Videogames extends Games {
         PICCHIADURO,
         FANTASY,
         RPG,
+        SPORT,
         ACTION_RPG,
         CORSA,
         SURVIVAL,
@@ -22,7 +21,7 @@ public class Videogames extends Games {
     private  Genere genere;
 
 
-    public Videogames(int id, String titolo, LocalDate annoDiPubblicazione, double price) {
+    public Videogames(int id, String titolo, int annoDiPubblicazione, double price, String piattaforma, int durataOre, Genere genere) {
         super(id, titolo, annoDiPubblicazione, price);
         this.piattaforma = piattaforma;
         this.durataOre = durataOre;
